@@ -1,0 +1,364 @@
+@charset "UTF-8";
+@function db($num){
+	@return $num/20;
+}
+@mixin eli($a){
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;  //对象作为伸缩盒子模型显示 
+    -webkit-box-orient: vertical;  //设置或检索伸缩盒对象的子元素的排列方式 
+    -webkit-line-clamp: $a; /** 显示的行数 */
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	background: #f5f5f5;
+	font-size:db(12rem);
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.top{
+	width: 100%;
+	height: db(181rem);
+	div{
+		float: left;
+	}
+	.tleft{
+		width: 42.5%;
+		height: db(181rem);
+		img{
+			width:100%;
+		}
+	}
+	.tright{
+		width: 57.5%;
+		height: db(180rem);
+		.trtop{
+			width: 100%;
+			height: 50%;
+			img{
+				width: 100%;
+			}
+		}
+		.trdown{
+			width: 100%;
+			height: 50%;
+			border-top: 1px solid #e2e2e2;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+.small{
+	background: #fff;
+	overflow: hidden;
+	margin-top: db(10rem);
+	.hot{
+		width: 100%;
+		height: db(17rem);
+		text-align: center;
+		line-height: db(17rem);
+		/*font-size: 12px;*/
+		margin-top: db(10rem);
+		background: url(../img/11.png) no-repeat center center;
+		background-size: 40%;
+	}
+	.list{
+		width: 100%;
+		height: db(328rem);
+		text-align: center;
+		/*margin-top: db(4rem);*/
+		.inner{
+			width: 25%;
+			float: left;
+			margin-top: db(4rem);
+			img{
+				width: db(51rem);
+				height: db(51rem);
+				margin-top: db(6rem);
+			}
+			p{
+				/*font-size: db(12rem);*/
+			}
+		}
+	}
+}
+.three{
+	background: #fff;
+	overflow: hidden;
+	margin-top: db(10rem);
+	.hot{
+		width: 100%;
+		height: db(17rem);
+		text-align: center;
+		line-height: db(17rem);
+		/*font-size: 12px;*/
+		margin-top: db(10rem);
+		background: url(../img/11.png) no-repeat center center;
+		background-size: 40%;
+	}
+	.list{
+		width: 100%;
+		height: db(170rem);
+		text-align: center;
+		/*margin-top: db(4rem);*/
+		.inner{
+			width: 25%;
+			float: left;
+			margin-top: db(4rem);
+			img{
+				width: db(51rem);
+				height: db(51rem);
+				margin-top: db(6rem);
+			}
+			p{
+				/*font-size: db(12rem);*/
+			}
+		}
+	}
+}
+.like{
+	width: 100%;
+	height: db(58rem);
+	text-align: center;
+	line-height: db(58rem);
+	background: url(../img/11.png) no-repeat center center;
+	background-size: 40%;
+}
+/*.tag{
+	background: #fff;
+	width: 100%;
+	height: db(35rem);
+	padding-left: db(20rem);
+	box-sizing: border-box;
+	border-bottom: 1px solid #e2e2e2;
+	box-shadow:0 1px 1px #e2e2e2;*/
+	/*position: fixed;
+	top: 0;
+	left: 0;*/
+	/*.old{
+		display: block;
+		float: left;
+		width: 20%;
+		height: db(33rem);
+		line-height: db(33rem);
+		text-align: center;
+	}
+	.new{
+		display: block;
+		float: left;
+		width: 20%;
+		height: db(33rem);
+		line-height: db(33rem);
+		text-align: center;
+		color: #ff0077;
+		border-bottom: 1px solid #ff0077;
+	}
+}*/
+.good{
+	width:100%;
+	height: db(3250rem);
+	/*position: relative;*/
+	.tag{
+		background: #fff;
+		width: 100%;
+		height: db(35rem);
+		padding-left: db(20rem);
+		box-sizing: border-box;
+		border-bottom: 1px solid #e2e2e2;
+		box-shadow:0 1px 1px #e2e2e2;
+		position: relative;
+		.old{
+			display: block;
+			float: left;
+			width: 20%;
+			height: db(33rem);
+			line-height: db(33rem);
+			text-align: center;
+		}
+		.new{
+			display: block;
+			float: left;
+			width: 20%;
+			height: db(33rem);
+			line-height: db(33rem);
+			text-align: center;
+			color: #ff0077;
+			border-bottom: 1px solid #ff0077;
+		}
+	}
+	.goods1{
+		width: 100%;
+		height:db(3250rem);
+		/*可以不定位，display:none以后，位置也会消失，后面的会顶上来;*/
+		/*position:absolute;
+		left: 0;
+		top: db(35rem);*/
+		.goodin{
+			width: 48%;
+			height: db(260rem);
+			float: left;
+			margin-left: db(5rem);
+			margin-top: db(5rem);
+			background: #fff;
+			img{
+				width: db(150rem);
+				height: db(200rem);
+			}
+			.hea{
+				display: block;
+				width: 90%;
+				height: db(30rem);
+				/*font-size: db(12rem);*/
+				float: left;
+				margin-left: db(10rem);
+				.tit{
+					background: #eff3f6;
+				}
+			}
+			p{
+				width: 90%;
+				height:db(25rem);
+				clear: both;
+				background: url(../img/55.png) center right no-repeat;
+				background-size: 8%;
+				line-height: db(20rem);
+				margin-left: db(10rem);
+				.price{
+					/*font-size:db(12rem);*/
+					font-weight: bold;
+					margin-top: db(-10rem);
+				}
+				.coll{
+					/*font-size:db(12rem);*/
+					color: #c2c2b2;
+					float:right;
+					margin-top: db(2rem);
+					margin-right: db(15rem);
+				}
+			}
+		}
+	}
+}
+.side{
+	#down{
+		width: db(50rem);
+		height: db(50rem);
+		border-radius: 50%;
+		background: rgba(0,0,0,0.7);
+		position: fixed;
+		right: db(10rem);
+		bottom: db(50rem);
+		margin-top: db(10rem);
+		color: white;
+		text-align: center;
+		/*line-height: db(50rem);*/
+		padding: db(8rem) db(10rem) 0 db(10rem);
+		box-sizing:border-box;
+		font-size: db(13rem);
+		display: none;
+		transition: 0.2s;
+		img{
+			width: 54%;
+		}
+	}
+}
+.cover{
+	width: 100%;
+	height: db(560rem);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index:10;
+	background: rgba(0,0,0,0.8);
+	display: none;
+}
+.cright{
+	width: db(110rem);
+	height: db(50rem);
+	position: relative;
+	position: fixed;
+	right:db(10rem);
+	bottom: db(52rem);
+	transition: 0.2s;
+	/*z-index: -10;*/
+	box-sizing: border-box;
+	.cone{
+		width: db(110rem);
+		height: db(40rem);
+		line-height: db(40rem);
+		margin-top: db(10rem);
+		position: absolute;
+		right:0;
+		bottom: 0;
+		opacity:0;
+		filter:alpha(opacity=0);
+		transition: 0.2s;
+		/*z-index: -10;*/
+		span{
+			color: #fff;
+			width: db(63rem);
+			font-size: db(14rem);
+			float:left;
+			text-align: center;
+		}
+		div{
+			width: db(40rem);
+			height: db(40rem);
+			border-radius: 50%;
+			background: #fff;
+			float:left;
+			box-sizing: border-box;
+			padding: db(4rem) db(8rem) 0 db(10rem);
+			img{
+				width: 80%;
+			}
+		}
+		
+	}
+	#moveup{
+		width: db(50rem);
+		height: db(50rem);
+		border-radius: 50%;
+		background: rgba(0,0,0,0.7);
+		/*margin-top: db(10rem);*/
+		color: white;
+		text-align: center;
+		/*line-height: db(50rem);*/
+		padding: db(12rem) db(10rem) 0 db(10rem);
+		box-sizing:border-box;
+		font-size: db(13rem);
+		z-index: 400;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		transition: 0.5s;
+	}
+	.cdel{
+		width: db(50rem);
+		height: db(50rem);
+		line-height: db(55rem);
+		text-align: center;
+		box-sizing:border-box;
+		border-radius: 50%;
+		/*margin-right: db(20rem);*/
+		background: #ff5577;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		display: none;
+		img{
+			width: 35%;
+		}
+	}
+}
+

@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@function db($num){
+	@return $num/20;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	background: #f5f5f5;
+	font-size:db(12rem);
+	background: #fff;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	width: 100%;
+	height: db(37rem);
+	background:#fafafa;
+	border-bottom: 1px solid #c9c7c8;
+	/*overflow: hidden;*/
+	i{
+		margin: db(10rem) db(10rem);
+		float: left;
+	}
+	div{
+		width: db(243rem);
+		height: db(37rem);
+		line-height: db(38rem);
+		float: left;
+		text-align: center;
+		font-size: db(16rem);
+		color:#5e5e5e;
+	}
+}
+form{
+	margin-top: db(42rem);
+	.user{
+		width: db(277rem);
+		height: db(43rem);
+		margin: 0 auto;
+		border-bottom: 1px solid #cccccc;
+		input{
+			width: 100%;
+			height: 100%;
+			border: none;
+			font-size: db(17rem);
+			margin-left: db(10rem);
+		}
+		input::-webkit-input-placeholder{
+    		color: #cccccc;
+    	}
+	}
+	.pwd{
+		width: db(277rem);
+		height: db(43rem);
+		margin: 0 auto;
+		border-bottom: 1px solid #cccccc;
+		input{
+			width: 60%;
+			height: 100%;
+			border: none;
+			font-size: db(17rem);
+			margin-left: db(10rem);
+		}
+		input::-webkit-input-placeholder{
+    		color: #cccccc;
+    	}
+    	span{
+    		float: right;
+    		margin-top:  db(18rem);
+    		margin-right:  db(5rem);
+    		color: #999999;
+    	}
+	}
+	.log{
+		width: 88%;
+		height: db(42rem);
+		background: #ff5777;
+		color: white;
+		font-weight: bold;
+		text-align: center;
+		line-height: db(42rem);
+		margin:db(30rem) auto db(10rem);
+		border-radius:db(21rem);
+	}
+	p{
+		color: #999999;
+		font-size: db(10rem);
+		float: right;
+		margin-right: db(24rem);
+	}
+	
+}
