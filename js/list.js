@@ -32,7 +32,7 @@ var tp ='';
 window.onload=function(){
 	t = tag.offsetTop;
 	tp=like.offsetTop;
-	console.log(tp)
+	// console.log(tp)
 }
 
 window.onscroll = function(){

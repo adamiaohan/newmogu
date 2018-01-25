@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@function db($num){
+	@return $num/20;
+}
+@mixin eli($a){
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;  //对象作为伸缩盒子模型显示 
+    -webkit-box-orient: vertical;  //设置或检索伸缩盒对象的子元素的排列方式 
+    -webkit-line-clamp: $a; /** 显示的行数 */
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	background: #f5f5f5;
+	font-size:db(12rem);
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.top{
+	width: 100%;
+	height: db(38rem);
+	line-height: db(38rem);
+	border-bottom: 1px solid #c9c7c8;
+	i{
+		float: left;
+		color: #5e5e5e;
+		font-size:db(20rem);
+	}
+	.tmid{
+		width: 74%;
+		height: 100%;
+		padding-left: db(35rem);
+		box-sizing: border-box;
+		text-align: center;
+		float: left;
+		font-size:db(15rem);
+		color: #5e5e5e;
+	}
+	.tright{
+		float: right;
+		width: 18%;
+	 	color: #727272;
+	 	.pic{
+	 		display: block;
+	 		float: right;
+	 		width: 50%;
+	 		height: db(38rem);
+	 		background: url(../img/we1.png) no-repeat center center;
+	 		background-size: 80%;
+	 	}
+	}
+}
+.shops{
+	width: 100%;
+	height: db(143rem);
+	background: #fff;
+	font-size:db(13rem);
+	color: #5e5e5e;
+	.shop{
+		margin-top: db(14rem);
+		border-top:1px solid #e5e5e5;
+		border-bottom:1px solid #e5e5e5;
+		width: 100%;
+		height: db(33rem);
+		line-height: db(30rem);
+		padding-top: db(3rem);
+		box-sizing: border-box;
+		.sele{
+			width: db(26rem);;
+			height: db(30rem);
+			margin-left: db(10rem);
+			float: left;
+			background: url(../img/checkbox.png) 0 180% no-repeat;
+			background-size: 70%;
+		}
+		i{
+			float: right;
+			margin-right: db(10rem);
+			font-size:db(6rem);
+		}
+		.rig{
+			float: right;
+			font-size:db(12rem);
+		}
+	}
+	.good{
+		width: 100%;
+		height: db(108rem);
+		padding: db(10rem);
+		box-sizing: border-box;
+		.sele{
+			width: db(26rem);;
+			height: db(30rem);
+			float: left;
+			background: url(../img/checkbox.png) 0 180%  no-repeat;
+			background-size: 70%;
+			margin-top: db(26rem);
+		}
+		.im{
+			width: db(55rem);
+			height: auto;
+			float: left;
+			margin-left: db(8rem);
+			/*margin-right: db(2rem);*/
+			img{
+				width: 100%;
+			}
+		}
+		.gright{
+			width:65%;
+			float: right;
+			margin-top: db(5rem);
+			margin-left: db(5rem);
+			.names{
+				font-weight: bold;
+				font-size: db(12rem);
+				line-height: db(16rem);
+			}
+			.names2{
+				margin-top: db(5rem);
+			}
+			.price{
+				margin-top: db(17rem);
+				span:nth-child(1){
+					color:#333;
+				}
+				del{
+					color:#999;
+					font-size: db(6rem);
+				}
+				span:nth-child(3){
+					color:#999;
+					font-size: db(6rem);
+					float: right;
+				}
+			}
+		}
+
+	}
+}
+footer{
+	width: 100%;
+	height: db(43rem);
+	padding: db(10rem);
+	box-sizing: border-box;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	line-height: db(22rem);
+	border-top: 1px solid #e5e5e5;
+	.sele{
+		width: db(26rem);;
+		height: db(30rem);
+		float: left;
+		background: url(../img/checkbox.png) 0 180%  no-repeat;
+		background-size: 70%;
+	}
+	span:nth-child(2){
+		color: #333;
+	}
+	span:nth-child(3){
+		color: #333;
+	}
+	span:nth-child(4){
+		color: #ff5777;
+	}
+	.cash{
+		float: right;
+		width: db(85rem);;
+		height: db(29rem);
+		background: #ff5777;
+		text-align: center;
+		line-height: db(29rem);
+		color: #fff;
+		margin-right: db(10rem);
+		border-radius: 5px;
+		margin-top: -4px;
+	}
+}
