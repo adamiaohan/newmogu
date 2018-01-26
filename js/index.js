@@ -150,7 +150,7 @@ var doms = document.querySelectorAll('.good div');
 var list;
 for(var i=0;i<doms.length;i++){
 	doms[i].onclick=function(){
-		list=window.open('../蘑菇街/list.html');
+		list=window.open('../newmogu/list.html');
 	}
 }
 
@@ -160,6 +160,6 @@ var goods = document.querySelectorAll('.goods');
 var detail;
 for(var j=0;j<goods.length;j++){
 	goods[j].onclick=function(){
-		detail=window.open('../蘑菇街/details.html');
+		detail=window.open('../newmogu/details.html');
 	}
 }
